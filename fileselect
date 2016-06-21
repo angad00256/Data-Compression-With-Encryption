@@ -1,0 +1,22 @@
+#! /bin/bash
+
+case $1 in
+
+c)	echo -n "Select the file to be compressed : "
+	;;
+
+e)	echo -n "Select the encrypted file to be decompressed : "
+	;;
+
+k)	echo -n "Select the key file : "
+	;;
+
+esac
+
+x=$( zenity --file-selection )
+
+echo $x
+
+echo $x > selectedfilepath
+
+exit 0

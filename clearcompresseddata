@@ -1,0 +1,7 @@
+#! /bin/bash
+
+rm encrypted/*
+rm keys/*
+
+exit 0
+

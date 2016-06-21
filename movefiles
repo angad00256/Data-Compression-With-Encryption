@@ -1,0 +1,15 @@
+#! /bin/bash
+
+case $1 in
+
+c)	mv $2 encrypted
+	mv $3 keys
+	;;
+
+d)	chmod +w $2
+	mv $2 decompressed
+	;;
+
+esac
+
+exit 0

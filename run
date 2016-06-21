@@ -1,0 +1,14 @@
+#! /bin/bash
+
+for file in $(ls *.c)
+do
+	gcc -c $file 
+done
+
+gcc -o result *.o 
+./result
+
+rm *.o
+rm result
+
+exit 0
